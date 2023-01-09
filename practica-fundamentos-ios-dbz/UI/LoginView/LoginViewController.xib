@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,34 +10,38 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="practica_fundamentos_ios_dbz" customModuleProvider="target">
             <connections>
+                <outlet property="emailText" destination="hRh-xj-YNP" id="5cP-hZ-ltA"/>
+                <outlet property="passwordText" destination="khy-qX-OES" id="dJ2-rg-L2G"/>
+                <outlet property="signInButton" destination="s2F-zl-87d" id="YVt-6c-XIo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleAspectFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-xj-YNP">
-                    <rect key="frame" x="32" y="259" width="329" height="40"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo2" translatesAutoresizingMaskIntoConstraints="NO" id="3f0-lD-abR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hRh-xj-YNP">
+                    <rect key="frame" x="32" y="247" width="311" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="nHf-Nb-Gmd"/>
                     </constraints>
-                    <color key="textColor" systemColor="systemGray2Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" textContentType="email"/>
                 </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khy-qX-OES">
-                    <rect key="frame" x="32" y="331" width="329" height="40"/>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khy-qX-OES">
+                    <rect key="frame" x="32" y="319" width="311" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="YR1-Yu-82A"/>
                     </constraints>
-                    <color key="textColor" systemColor="systemGray2Color"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2F-zl-87d">
-                    <rect key="frame" x="32" y="471" width="329" height="40"/>
+                    <rect key="frame" x="32" y="459" width="311" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="Gb5-K6-Aou"/>
                     </constraints>
@@ -45,17 +49,23 @@
                     <buttonConfiguration key="configuration" style="filled" title="Sign in">
                         <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="signInTapped:" destination="-1" eventType="touchUpInside" id="9Mv-5f-Kci"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBrownColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="s2F-zl-87d" secondAttribute="trailing" constant="32" id="4CV-Ih-dME"/>
-                <constraint firstItem="hRh-xj-YNP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5ao-hX-mAU"/>
+                <constraint firstAttribute="bottom" secondItem="3f0-lD-abR" secondAttribute="bottom" id="9cE-20-Mmv"/>
                 <constraint firstItem="hRh-xj-YNP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="GOZ-5n-QeR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3f0-lD-abR" secondAttribute="trailing" id="H35-2Q-ZMv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hRh-xj-YNP" secondAttribute="trailing" constant="32" id="HC3-TA-Aed"/>
+                <constraint firstItem="khy-qX-OES" firstAttribute="top" secondItem="hRh-xj-YNP" secondAttribute="bottom" constant="32" id="HYw-9P-AiC"/>
+                <constraint firstItem="3f0-lD-abR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Q39-DG-fai"/>
+                <constraint firstItem="3f0-lD-abR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RQm-7u-ViX"/>
                 <constraint firstItem="s2F-zl-87d" firstAttribute="top" secondItem="khy-qX-OES" secondAttribute="bottom" constant="100" id="Ymo-Zl-KZO"/>
-                <constraint firstItem="khy-qX-OES" firstAttribute="top" secondItem="hRh-xj-YNP" secondAttribute="bottom" constant="32" id="ZXZ-wj-Gq0"/>
                 <constraint firstItem="s2F-zl-87d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="32" id="gPk-nb-dqU"/>
                 <constraint firstAttribute="trailing" secondItem="khy-qX-OES" secondAttribute="trailing" constant="32" id="gan-mH-GWl"/>
                 <constraint firstItem="hRh-xj-YNP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="hTm-FA-tb2"/>
@@ -65,11 +75,9 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="fondo2" width="1080" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
