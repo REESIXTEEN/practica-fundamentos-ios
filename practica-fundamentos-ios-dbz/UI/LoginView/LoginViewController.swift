@@ -23,10 +23,12 @@ class LoginViewController: UIViewController {
         
         emailText.center.x -= view.bounds.width
         passwordText.center.x -= view.bounds.width
+        signInButton.center.x += view.bounds.width
         
         UIView.animate(withDuration: 1.5, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0){
             self.emailText.center.x += self.view.bounds.width
             self.passwordText.center.x += self.view.bounds.width
+            self.signInButton.center.x -= self.view.bounds.width
         }
         
         
