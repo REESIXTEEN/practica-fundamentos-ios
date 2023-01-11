@@ -1,6 +1,6 @@
 //
 //  DetailsViewController.swift
-//  pruebaDos
+//  practica-fundamentos-ios-dbz
 //
 //  Created by Pablo Gómez on 2/1/23.
 //

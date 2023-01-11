@@ -1,6 +1,6 @@
 //
 //  TableCell.swift
-//  pruebaDos
+//  practica-fundamentos-ios-dbz
 //
 //  Created by Pablo Gómez on 27/12/22.
 //
