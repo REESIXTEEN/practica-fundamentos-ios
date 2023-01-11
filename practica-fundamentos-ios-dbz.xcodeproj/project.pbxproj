@@ -26,6 +26,7 @@
 		CB8B32A6296EF28F00C48A9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B3295296EF28F00C48A9A /* LoginViewController.swift */; };
 		CB8B32A9296EF30200C48A9A /* HeroeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B32A7296EF30200C48A9A /* HeroeTests.swift */; };
 		CB8B32AA296EF30200C48A9A /* TransformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B32A8296EF30200C48A9A /* TransformationTests.swift */; };
+		CB8B32AC296EF53200C48A9A /* LocalDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB8B32AB296EF53200C48A9A /* LocalDataLayer.swift */; };
 		CBCA10CE29699FA500B174DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA10CD29699FA500B174DA /* AppDelegate.swift */; };
 		CBCA10D029699FA500B174DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA10CF29699FA500B174DA /* SceneDelegate.swift */; };
 		CBCA10D729699FA600B174DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCA10D629699FA600B174DA /* Assets.xcassets */; };
@@ -36,7 +37,6 @@
 		CBCA1107296C2F7F00B174DA /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA1106296C2F7F00B174DA /* NetworkLayer.swift */; };
 		CBCA1109296C329000B174DA /* Heroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA1108296C329000B174DA /* Heroe.swift */; };
 		CBCA110B296C32C200B174DA /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA110A296C32C200B174DA /* Transformation.swift */; };
-		CBCA110F296C37F300B174DA /* LocalDataLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA110E296C37F300B174DA /* LocalDataLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +76,7 @@
 		CB8B3295296EF28F00C48A9A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB8B32A7296EF30200C48A9A /* HeroeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroeTests.swift; sourceTree = "<group>"; };
 		CB8B32A8296EF30200C48A9A /* TransformationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformationTests.swift; sourceTree = "<group>"; };
+		CB8B32AB296EF53200C48A9A /* LocalDataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataLayer.swift; sourceTree = "<group>"; };
 		CBCA10CA29699FA500B174DA /* practica-fundamentos-ios-dbz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "practica-fundamentos-ios-dbz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCA10CD29699FA500B174DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBCA10CF29699FA500B174DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		CBCA1106296C2F7F00B174DA /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		CBCA1108296C329000B174DA /* Heroe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heroe.swift; sourceTree = "<group>"; };
 		CBCA110A296C32C200B174DA /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
-		CBCA110E296C37F300B174DA /* LocalDataLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalDataLayer.swift; path = ../../../../ejemplo_clase/pruebaDos/pruebaDos/Managers/LocalDataLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,7 +279,7 @@
 		CBCA1104296C2B8C00B174DA /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				CBCA110E296C37F300B174DA /* LocalDataLayer.swift */,
+				CB8B32AB296EF53200C48A9A /* LocalDataLayer.swift */,
 				CBCA1106296C2F7F00B174DA /* NetworkLayer.swift */,
 			);
 			path = Managers;
@@ -439,12 +439,12 @@
 				CB8B32A2296EF28F00C48A9A /* TableViewController.swift in Sources */,
 				CBCA1109296C329000B174DA /* Heroe.swift in Sources */,
 				CB8B329F296EF28F00C48A9A /* DetailsViewController.swift in Sources */,
-				CBCA110F296C37F300B174DA /* LocalDataLayer.swift in Sources */,
 				CBCA110B296C32C200B174DA /* Transformation.swift in Sources */,
 				CB8B32A1296EF28F00C48A9A /* TableCell.swift in Sources */,
 				CB8B3299296EF28F00C48A9A /* CollectionViewController.swift in Sources */,
 				CB8B329B296EF28F00C48A9A /* TransformsViewController.swift in Sources */,
 				CB8B3296296EF28F00C48A9A /* CollectionCell.swift in Sources */,
+				CB8B32AC296EF53200C48A9A /* LocalDataLayer.swift in Sources */,
 				CBCA10CE29699FA500B174DA /* AppDelegate.swift in Sources */,
 				CBCA10D029699FA500B174DA /* SceneDelegate.swift in Sources */,
 			);
