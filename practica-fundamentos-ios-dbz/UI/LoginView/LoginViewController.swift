@@ -35,13 +35,16 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signInTapped(_ sender: UIButton) {
+        signInButton.configuration?.showsActivityIndicator = true
         guard let email=emailText.text, !email.isEmpty else {
             print("email is empty!")
+            signInButton.configuration?.showsActivityIndicator = false
             return
         }
         
         guard let password = passwordText.text, !password.isEmpty else {
             print("password is empty!")
+            signInButton.configuration?.showsActivityIndicator = false
             return
         }
         
@@ -61,8 +64,6 @@ class LoginViewController: UIViewController {
                 print("Login Error: ", error?.localizedDescription ?? "")
             }
         }
-        
-        
         
     }
     
